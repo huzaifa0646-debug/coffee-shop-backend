@@ -10,7 +10,7 @@ public interface CustomerMapping{
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "addresses", ignore = true)
     @Mapping(target = "orders", ignore = true)
-    @Mapping(target = "roles", ignore = true)
+    //@Mapping(target = "roles", ignore = true)
     Customers toEntity(CustomersRequest request);
     CustomersResponse toResponse(Customers entity);
 

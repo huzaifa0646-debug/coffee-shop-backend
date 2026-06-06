@@ -22,8 +22,8 @@ public class Customers {
     private String name;
     @NotBlank(message = "Password is mandatory")
     private String password;
-    @NotBlank(message = "Roles are mandatory")
-    private String roles;
+    // @NotBlank(message = "Roles are mandatory")
+    // private String roles;
     @Email(message = "Email should be valid")
     private String email;
     @OneToMany(mappedBy = "customer")
